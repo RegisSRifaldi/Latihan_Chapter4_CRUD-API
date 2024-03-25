@@ -71,7 +71,7 @@ app.put("/houses/:id", async (req, res) => {
     res.json({ data: result.rowCount });
     console.info("berhasil memperbarui data houses");
   } catch (error) {
-    console.error("Gagal memperbarui data rumah: ", error);
+    console.error("Gagal memperbarui data houses: ", error);
   }
 });
 
@@ -84,7 +84,7 @@ app.delete("/houses/:id", async (req, res) => {
     await pool.query(query, [houses]);
     res.send("berasil menghapus data house");
   } catch (error) {
-    console.error("Gagal menghapus data rumah:", error);
+    console.error("Gagal menghapus data houses:", error);
   }
 });
 
