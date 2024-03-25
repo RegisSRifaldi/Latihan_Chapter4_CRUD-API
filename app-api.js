@@ -88,7 +88,7 @@ app.delete("/houses/:id", async (req, res) => {
   }
 });
 
-// Internal Server Error
+// 500 Internal Server Error
 app.use((err, req, res, next) => {
   res.status(500).json({ err: err.message });
 });
