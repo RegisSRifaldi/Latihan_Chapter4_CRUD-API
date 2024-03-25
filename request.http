@@ -1,0 +1,30 @@
+### Listing all resources
+GET http://localhost:3000/houses
+
+### Getting a resource
+GET http://localhost:3000/houses/8
+
+### Creating a resource
+POST http://localhost:3000/houses/
+Content-Type: application/json
+
+{
+    "address": "Jl. Jakarta No. 21, Jakarta",
+    "owner_name": "Jess No Limit",
+    "num_rooms": 72,
+    "has_garden": true
+}
+
+### Updating a resource
+PUT http://localhost:3000/houses/11
+Content-Type: application/json
+
+{
+    "address": "Jl. Jakarta No. 21, Jakarta",
+    "owner_name": "Lemon",
+    "num_rooms": 3,
+    "has_garden": true
+}
+
+### Deleting a resource
+DELETE http://localhost:3000/houses/11
