@@ -1,11 +1,11 @@
 ### Listing all resources
-GET http://localhost:3000/houses
-
+GET http://localhost:3000/v1/houses
+ 
 ### Getting a resource
-GET http://localhost:3000/houses/8
+GET http://localhost:3000/v1/houses/8
 
 ### Creating a resource
-POST http://localhost:3000/houses/
+POST http://localhost:3000/v1/houses/
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Updating a resource
-PUT http://localhost:3000/houses/11
+PUT http://localhost:3000/v1/houses/11
 Content-Type: application/json
 
 {
@@ -24,7 +24,12 @@ Content-Type: application/json
     "owner_name": "Lemon",
     "num_rooms": 3,
     "has_garden": true
-}
+} 
 
 ### Deleting a resource
-DELETE http://localhost:3000/houses/11
+DELETE http://localhost:3000/v1/houses/11
+
+
+### create post
+POST http://localhost:3000/v1/houses
+Authorization: barier dasdasdasdsa
