@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
-  title: Instagram API
-  description: api mirip-mirip instagram
+  title: Houses API
+  description: api Houses
   version: 1.0.0
   contact:
     email: regisrifaldi44@gmail.com
@@ -10,7 +10,7 @@ servers:
 paths:
   /houses:
     post:
-      summary: register new houses
+      summary: create new houses
       description: mendaftarkan houses baru kedalam sistem..
       requestBody:
         $ref: "#/components/requestBodies/Register"
